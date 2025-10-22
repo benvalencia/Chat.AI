@@ -4,15 +4,13 @@ function App() {
 
   return (
     <>
-      <div className="h-full w-full max-w-7xl mx-auto">
-        <div className="p-4 m-4 border rounded-2xl border-gray-500">
-          <div>
-            <div>
-              chats list
-            </div>
-            <div>
-              {/* Chat messages will go here */}
-              <div>
+      <div className="h-dvh w-full max-w-7xl flex-1 mx-auto">
+        <div className="pl-4 pr-4 pt-2 ml-4 mr-4 mt-2">
+          <h1>Chat.AI</h1>
+        </div>
+        <div className="pl-4 pr-4 pt-4 ml-4 mr-4 mt-4 border rounded-2xl border-gray-500 flex flex-1 flex-col h-[80vh]">
+          <div className="flex flex-col flex-1">
+            <div className="flex flex-1 flex-col mb-4 justify-end">
                 <div className="chat-ai-message">
                   test message normal AI
                 </div>
@@ -26,11 +24,11 @@ function App() {
                   test message user
                 </div>
               </div>
-              <div>
-                <input placeholder={'Escribe tu mensaje aqui...'}/>
+            <div className="p-2">
+              <form className="flex flex-1 flex-row gap-4 pb-4">
+                <input type="text" placeholder="Pregunta algo..." className="p-4 pl-5 pr-5 flex-1 outline-none border border-gray-600 rounded-2xl"/>
                 <button>Enviar</button>
-                {/* Input area for user to type messages */}
-              </div>
+              </form>
             </div>
           </div>
         </div>
