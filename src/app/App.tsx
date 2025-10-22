@@ -1,4 +1,5 @@
 import './App.css'
+import Message from "../components/message/Message.tsx";
 
 function App() {
 
@@ -11,19 +12,11 @@ function App() {
         <div className="pl-4 pr-4 pt-4 ml-4 mr-4 mt-4 border rounded-2xl border-gray-500 flex flex-1 flex-col h-[80vh]">
           <div className="flex flex-col flex-1">
             <div className="flex flex-1 flex-col mb-4 justify-end">
-                <div className="chat-ai-message">
-                  test message normal AI
-                </div>
-                <div className="chat-user-message">
-                  test message user
-                </div>
-                <div className="chat-ai-message">
-                  test message normal AI
-                </div>
-                <div className="chat-user-message">
-                  test message user
-                </div>
-              </div>
+              <Message agent={true} message="test de mensaje "></Message>
+              <Message message="test de mensaje user "></Message>
+              <Message agent={true} message="test de mensaje agent 2 "></Message>
+              <Message message="test de mensaje user "></Message>
+            </div>
             <div className="p-2">
               <form className="flex flex-1 flex-row gap-4 pb-4">
                 <input type="text" placeholder="Pregunta algo..." className="p-4 pl-5 pr-5 flex-1 outline-none border border-gray-600 rounded-2xl"/>
