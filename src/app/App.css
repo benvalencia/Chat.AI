@@ -1,0 +1,23 @@
+.chat-ai-message {
+    background-color: #e0f7fa;
+    border-left: 4px solid #00796b;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    color: #004d40;
+}
+
+.chat-ai-message:hover {
+    background-color: #b2ebf2;
+}
+
+.chat-user-message {
+    background-color: #e0f7fa;
+    border-left: 4px solid #00796b;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    color: #004d40;
+}
